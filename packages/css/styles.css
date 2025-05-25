@@ -776,6 +776,64 @@ img {
   margin-right: 0.5rem;
 }
 
+/* Add these styles to your existing qualification section in styles.css */
+
+.qualification__description {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+}
+
+.qualification__list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.qualification__list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.qualification__list li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: hsl(var(--hue-color), 69%, 61%);
+  font-weight: bold;
+}
+
+.qualification__technologies {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.qualification__tech {
+  font-weight: 600;
+  color: hsl(var(--hue-color), 69%, 61%);
+}
+
+.qualification__summary {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin: 0;
+  color: var(--text-color);
+}
+
+/* Dark theme adjustments */
+.dark-theme .qualification__description {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .qualification__technologies {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
 /*==================== SERVICES ====================*/
 .services__container {
   gap: 1.5rem;
